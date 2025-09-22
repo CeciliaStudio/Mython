@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "id": "mython",
+    "version": "${version}",
+    "name": "Mython",
+    "description": "",
+    "authors": [],
+    "contact": {},
+    "license": "All-Rights-Reserved",
+    "icon": "assets/mython/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "org.ceciliastudio.mython.client.MythonClient"
+        ],
+        "main": [
+            "org.ceciliastudio.mython.Mython"
+        ]
+    },
+    "mixins": [
+        "mython.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}
